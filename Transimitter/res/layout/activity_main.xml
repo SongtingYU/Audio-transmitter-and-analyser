@@ -1,0 +1,89 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.al.transimitter.MainActivity" >
+
+    
+    <Button
+        android:id="@+id/task"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Task 1" 
+        android:textSize="30dp"/>
+    
+	<TextView
+	    android:id="@+id/textView1"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignLeft="@+id/editText1"
+	    android:layout_below="@+id/task"
+	    android:text="Frequency(HZ)" />   
+	
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/task"
+        android:ems="10" 
+        android:gravity="end|bottom"
+        android:textSize="30dp"/>
+        
+	<SeekBar
+	    android:id="@+id/seekBarFreq"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignLeft="@+id/editText1"
+	    android:layout_alignRight="@+id/editText1"
+	    android:layout_below="@+id/editText1"
+	    android:layout_marginTop="23dp"
+	    android:padding="10dp" />	
+	    
+	<TextView
+		    android:id="@+id/textView2"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_alignLeft="@+id/editText2"
+		    android:layout_below="@+id/seekBarFreq"
+		    android:text="Duration(s)" />    			
+    
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:gravity="end|bottom"
+        android:layout_below="@+id/seekBarFreq"
+        android:ems="10" 
+        android:textSize="30dp"/>
+    
+    <SeekBar
+        android:id="@+id/seekBarDuration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editText2"
+        android:layout_alignRight="@+id/editText2"
+        android:layout_below="@+id/editText2"
+        android:layout_marginTop="21dp"
+        android:padding="10dp" />
+
+	<Button
+	    android:id="@+id/button01"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@+id/seekBarDuration"
+	    android:layout_centerHorizontal="true"
+	    android:layout_marginTop="60dp"
+	    android:text="Play" />
+
+
+
+
+
+</RelativeLayout>
